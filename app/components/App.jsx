@@ -1,10 +1,10 @@
 import React from 'react';
+import Paginacao from './paginacao/paginacao.jsx';
 
 export default class App extends React.Component {
   render() {
     return (
-     <div style={{textAlign: 'center'}}>
-        <h1>Hello World</h1>
-      </div>);
+        <Paginacao totalRegistros={10} quantidadePorPagina={3} paginaAtual={2} />
+    );
   }
 }
